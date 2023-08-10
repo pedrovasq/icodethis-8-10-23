@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-100 flex justify-center items-center min-h-screen">
+    
+    <div id="ball1" class="bg-gradient-to-r from-red-400 to-orange-400 absolute rounded-full w-48 h-48 mr-80 mt-32"></div>
+
+    <div id="ball2" class="bg-gradient-to-r from-blue-400 to-green-400 absolute rounded-full w-60 h-60 ml-72"></div>
+
+    <button id="btn" onClick="displayPop()" class="bg-white absolute font-bold border-2 px-16 py-4 rounded-xl shadow-lg transition ease-in ease-out hover:bg-gray-50 active:translate-y-1 ease-in">Click me!</button>
+    
+    <div id="myBg" class="absolute bg-white text-[#181028] flex-col align-center text-center p-16 space-y-6 z-10 shadow-lg rounded-xl w-96 h-[400px] opacity-80 hidden"></div>
+
+    <div id="pop1" class="bg-white text-[#181028] flex-col align-center text-center p-16 space-y-6 z-10 shadow-lg rounded-xl w-96 invisible hidden">
+        <div class="font-bold text-gray-700 text-xl visible">Enjoyed the read?
+            <div class="absolute right-0 left-0 top-[563px] bottom-0 ml-auto mr-auto w-[215px] h-4 bg-indigo-200 rounded -z-10"></div>
+            <div onClick="closePop()"class="absolute top-[250px] bottom-0 left-[320px] right-0 ml-auto mr-auto bg-white opacity-100 border-2 p-2 rounded-full w-9 h-9 visible">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </div>
+        </div>
+        <div class="font-medium text-gray-600 text-sm inline visible">Join our monthly newsletter for <br> helpful tips on design and more.</div>
+        <input type="text" placeholder="Your email address" class="border-2 p-4 rounded text-xs w-60 visible">
+        <label class="text-[12px] inline-block visible"><input type="checkbox" class="checked:bg-purple-700 visible"> <span>I agree to receive this newsletter and subscribe at any time.</span></label>
+        <button class="bg-indigo-950 px-20 py-3 text-white font-thin text-xs rounded visible transition ease-in ease-out hover:bg-indigo-900 active:translate-y-1 ease-in">SUBSCRIBE</button>
+        
+    </div>
+</body>
+
+</html>
